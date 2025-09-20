@@ -3,6 +3,16 @@ v2.0 | 20110126
 License: none (public domain)
 */
 
+header {
+    /* background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FFs1ELh5WYAAH5dH%3Fformat%3Djpg%26name%3D4096x4096&f=1&nofb=1&ipt=783d6180c6473342fed4d7dddca2d128a9a8ace171423ab6eb20401b3822faa4'); */
+    background-color: #252;
+    color: #eee;
+    background-position: -200px 1000px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-bottom: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,7 +37,7 @@ h1 {
   display: flex;
   flex-flow: column;
   height: 100%;
-  max-width: 800px;
+  width: 90%;
   margin: 6% 10%;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
