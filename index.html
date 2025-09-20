@@ -1,10 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Purdue Dining Nutrition</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <main>
+        <h1>Purdue Dining: Weekly Nutrition</h1>
+        <section class="add-meal">
+          <h2>Add a Meal</h2>
+          <div>
+            <label for="diningLocation">Dining Location:</label>
+            <select id="diningLocation" name="diningLocation" required>
+              <option value="">--Select a dining hall--</option>
+              <option value="wiley">Wiley</option>
+              <option value="windsor">Windsor</option>
+              <option value="ford">Ford</option>
+              <option value="earhart">Earhart</option>
+              <option value="hillinbrand">Hillinbrand</option>
+            </select>
+          </div>
 
-</body>
+          <div>
+            <label for="mealType">Meal Type:</label>
+            <select id="mealType" name="mealType" required>
+              <option value="">--Select a meal--</option>
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="servingSize">Serving Size (grams):</label>
+            <input type="number" id="servingSize" name="servingSize" required />
+          </div>
+
+          <button type="submit">Save</button>
+        </section>
+
+        <!-- <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6d%2F61%2Ff1%2F6d61f16ed76093b77427204daafde8bc.jpg&f=1&nofb=1&ipt=c6c4d8ecedfd6e4885939088659b0d9ac047c16b098280740fbb78eccbf996a1"
+        /> -->
+
+        <section class="weekly-dashboard">
+          <h2>Weekly Dashboard</h2>
+          <div class="dashboard">
+            <div class="dashboard-card">
+              <h3>Calories</h3>
+              <p id="caloriesTotal">0</p>
+            </div>
+            <div class="dashboard-card">
+              <h3>Protein (g)</h3>
+              <p id="proteinTotal">0</p>
+            </div>
+            <div class="dashboard-card">
+              <h3>Carbs (g)</h3>
+              <p id="carbsTotal">0</p>
+            </div>
+            <div class="dashboard-card">
+              <h3>Fat (g)</h3>
+              <p id="fatTotal">0</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <img src="images/anim_written_in_vi.gif" alt="">
+      </footer>
+    </div>
+  </body>
 </html>
