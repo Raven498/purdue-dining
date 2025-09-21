@@ -2,6 +2,14 @@
   display: none;
 }
 
+header {
+    background-color: #000;
+    color: #cfb991;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
