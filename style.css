@@ -102,3 +102,8 @@ footer {
   font-size: 0.8em;
   color: #555;
 }
+
+.serving-size-input {
+  max-width: 40px;
+}
+
