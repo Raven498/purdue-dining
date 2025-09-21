@@ -1,0 +1,109 @@
+.off {
+  display: none;
+}
+
+header {
+    background-color: #000;
+    color: #cfb991;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('images/backgroundDiningimg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0.5rem;
+}
+
+.content {
+  background-color: #eee;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  max-width: 800px;
+  margin: 6% 10%;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.weekly-dashboard,
+.add-meal {
+  margin: 0 1rem;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dashboard-cards {
+    display: flex;            /* put cards in a row */
+    gap: 20px;                /* space between cards */
+    margin-top: 10px;
+  }
+
+.dashboard-card {
+  background-color: #fff;
+  min-width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  flex: 1;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.add-meal {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.add-meal div,
+.add-meal button {
+  margin: 0.25rem 0;
+}
+
+img {
+  margin: 0 auto;
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem;
+  font-size: 0.8em;
+  color: #555;
+}
+
+.serving-size-input {
+  max-width: 40px;
+}
+
