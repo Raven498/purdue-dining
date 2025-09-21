@@ -7,12 +7,16 @@
   </head>
   <body>
     <div class="content">
-      <header>
-        <h1>Purdue Dining: Weekly Nutrition</h1>
-      </header>
       <main>
+        <h1>Purdue Dining: Weekly Nutrition</h1>
         <section class="add-meal">
           <h2>Add a Meal</h2>
+
+          <div>
+            <label for="dining-date">Date:</label>
+            <input type="date" id="dining-date" name="date" required />
+          </div>
+          
           <div>
             <label for="diningLocation">Dining Location:</label>
             <select id="diningLocation" name="diningLocation" required>
@@ -21,7 +25,7 @@
               <option value="windsor">Windsor</option>
               <option value="ford">Ford</option>
               <option value="earhart">Earhart</option>
-              <option value="hillinbrand">Hillinbrand</option>
+              <option value="hillenbrand">Hillinbrand</option>
             </select>
           </div>
 
@@ -31,22 +35,77 @@
               <option value="">--Select a meal--</option>
               <option value="breakfast">Breakfast</option>
               <option value="lunch">Lunch</option>
+              <option value="late-lunch">Late Lunch</option>
               <option value="dinner">Dinner</option>
             </select>
           </div>
 
-          <div>
+          <!-- <div>
             <label for="servingSize">Serving Size (grams):</label>
             <input type="number" id="servingSize" name="servingSize" required />
-          </div>
+          </div> -->
 
-          <button type="submit">Save</button>
+          <button type="submit" id="show-data">Show Data</button>
         </section>
 
         <!-- <img
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6d%2F61%2Ff1%2F6d61f16ed76093b77427204daafde8bc.jpg&f=1&nofb=1&ipt=c6c4d8ecedfd6e4885939088659b0d9ac047c16b098280740fbb78eccbf996a1"
         /> -->
 
+  <h2>Dashboard</h2>
+  <label for="dashboardSelect">View:</label>
+  <select id="dashboardSelect" name="dashboardSelect">
+    <option value="daily">Daily Dashboard</option>
+    <option value="weekly">Weekly Dashboard</option>
+  </select>
+
+  <div id="dailyDashboard" class="dashboard">
+    <h3>Daily Dashboard</h3>
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <h4>Calories</h4>
+        <p id="dailyCalories">0</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Protein</h4>
+        <p id="dailyProtein">0</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Carbs</h4>
+        <p id="dailyCarbs">0</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Fat</h4>
+        <p id="dailyFat">0</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Weekly Dashboard -->
+  <section id="weeklyDashboard" class="weekly-dashboard" style="display:none;">
+    <h3>Weekly Dashboard</h3>
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <h4>Calories</h4>
+        <p id="weeklyCalories">0</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Protein</h4>
+        <p id="weeklyProtein">0</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Carbs</h4>
+        <p id="weeklyCarbs">0</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Fat</h4>
+        <p id="weeklyFat">0</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!--
         <section class="weekly-dashboard">
           <h2>Weekly Dashboard</h2>
           <div class="dashboard">
@@ -68,10 +127,15 @@
             </div>
           </div>
         </section>
+        -->
+       
       </main>
+      <footer>
+        <img src="images/anivicatsmirk_small.gif" alt="">
+      </footer>
     </div>
-  <footer>
-    <img src="images/anim_written_in_vi.gif" alt="">
-  </footer>
   </body>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <!-- <script src="js/date.js"></script> -->
 </html>
